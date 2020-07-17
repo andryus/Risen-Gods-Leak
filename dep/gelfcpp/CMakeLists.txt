@@ -1,0 +1,15 @@
+# gelfcpp (https://git.rising-gods.de/game/libraries/gelfcpp)
+
+if (WITH_GRAYLOG_SUPPORT)
+    set(GELFCPP_AS_SUBPROJECT 1)
+    if (WIN32)
+        set(GELFCPP_WITH_COMPRESSION 0)
+    else()
+        set(GELFCPP_WITH_COMPRESSION 1)
+    endif()
+
+    add_subdirectory(gelfcpp)
+else()
+    add_library(gelfcpp INTERFACE)
+    target_compile_definitions(gelfcpp INTERFACE -DTRINITY_WITHOUT_GELFCPP)
+endif()

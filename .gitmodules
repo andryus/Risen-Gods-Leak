@@ -1,0 +1,9 @@
+[submodule "dep/prometheus-cpp"]
+	path = dep/prometheus-cpp
+	url = ssh://git@git.rising-gods.de:1227/game/libraries/prometheus-cpp.git
+[submodule "dep/cpr"]
+	path = dep/cpr
+	url = ssh://git@git.rising-gods.de:1227/game/libraries/cpr.git
+[submodule "dep/gelfcpp/gelfcpp"]
+	path = dep/gelfcpp/gelfcpp
+	url = ssh://git@git.rising-gods.de:1227/game/libraries/gelfcpp.git

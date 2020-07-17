@@ -1,0 +1,9 @@
+#pragma once
+#include "API/ModuleScript.h"
+#include "UnitOwner.h"
+
+///////////////////////////////////////
+/// Summoner
+///////////////////////////////////////
+
+SCRIPT_MODULE(Summoner, Unit)
